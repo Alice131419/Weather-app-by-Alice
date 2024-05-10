@@ -6,7 +6,6 @@
     <link rel="stylesheet" href="src/style.css" />
     <title>Weather-app-by-Alice</title>
   </head>
-  <script src="src/index.js"></script>
   <script src="https://unpkg.com/axios@1.6.7/dist/axios.min.js"></script>
   <body>
     <div class="weather-app">
@@ -23,22 +22,22 @@
         </form>
       </header>
       <main>
-        <div>
-          <h1 class="weather-app-city" id="weather-app-city"></h1>
-          <p class="weather-app-details">
-            <span id="time"></span>
-            <span id="description"></span>
-            <br />
-            Humidity: <strong id="wind-speed"></strong>, Wind:<strong
-              id="wind-speed"
-            ></strong>
-          </p>
-        </div>
-        <div class="weather-app-temperature-container" id="temperature"></div>
-        <div id="icon">
-          <img
-          src"http://shecodes-assets.s3.amazonaws.com/api/weather/icons/clear-sky-day.png"
-          class="weather-app-icon"/>
+        <div class="weather-app-data">
+          <div>
+            <h1 class="weather-app-city" id="city">London</h1>
+            <p class="weather-app-details">
+              <span id="time"></span>
+              <span id="description"></span>
+              <br />
+              Humidity: <strong id="wind-speed"></strong>, Wind:
+              <strong id="wind-speed"></strong>
+            </p>
+          </div>
+          <div class="weather-app-temperature-container">
+            <div id="icon"></div>
+            <div class="weather-app-temperature" id="temperature"></div>
+            <div class="weather-app-unit">°C</div>
+          </div>
         </div>
       </main>
 
@@ -60,5 +59,6 @@
         </a>
       </footer>
     </div>
+    <script src="src/index.js"></script>
   </body>
 </html>
