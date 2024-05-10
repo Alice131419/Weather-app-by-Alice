@@ -3,55 +3,60 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/style.css" />
     <title>Weather-app-by-Alice</title>
   </head>
-  <body class="weather-app">
-    <header>
-      <form class="search-form" id="search-form">
-        <input
-          type="search"
-          placeholder="Enter a cty..."
-          required
-          id="search-form-input"
-          class="search-form-input"
-        />
-        <input type="submit" value="search" class="search-form-button" />
-      </form>
-    </header>
-    <main>
-      <div>
-        <h1 class="weather-app-city" id="weather-app-city"></h1>
-        <p class="weather-app-details">
-          <span id="time"></span>
-          <span id="description"></span>
-          <br />
-          Humidity: <strong id="wind-speed"></strong>, Wind:<strong
-            id="wind-speed"
-          ></strong>
-        </p>
-      </div>
-      <div class="weather-app-temperature-container" id="temperature"></div>
-      <div id="icon">
-        <img
-        src"http://shecodes-assets.s3.amazonaws.com/api/weather/icons/clear-sky-day.png"
-        class="weather-app-icon"/>
-      </div>
-    </main>
+  <body>
+    <div class="weather-app">
+      <header>
+        <form class="search-form" id="search-form">
+          <input
+            type="search"
+            placeholder="Enter a cty..."
+            required
+            id="search-form-input"
+            class="search-form-input"
+          />
+          <input type="submit" value="search" class="search-form-button" />
+        </form>
+      </header>
+      <main>
+        <div>
+          <h1 class="weather-app-city" id="weather-app-city"></h1>
+          <p class="weather-app-details">
+            <span id="time"></span>
+            <span id="description"></span>
+            <br />
+            Humidity: <strong id="wind-speed"></strong>, Wind:<strong
+              id="wind-speed"
+            ></strong>
+          </p>
+        </div>
+        <div class="weather-app-temperature-container" id="temperature"></div>
+        <div id="icon">
+          <img
+          src"http://shecodes-assets.s3.amazonaws.com/api/weather/icons/clear-sky-day.png"
+          class="weather-app-icon"/>
+        </div>
+      </main>
 
-    <footer>
-      Coded by
-      <a href="https://github.com/Alice131419" target="_blank"> Alice Petcu </a>
-      is
-      <a
-        href="https://github.com/Alice131419/Weather-app-by-Alice"
-        target="_blank"
-      >
-        open-sourced on GitHub
-      </a>
-      and
-      <a href="https://weather-app-by-alice.netlify.app/" target="_blank">
-        hosted on Netlify
-      </a>
-    </footer>
+      <footer>
+        Coded by
+        <a href="https://github.com/Alice131419" target="_blank">
+          Alice Petcu
+        </a>
+        is
+        <a
+          href="https://github.com/Alice131419/Weather-app-by-Alice"
+          target="_blank"
+        >
+          open-sourced on GitHub
+        </a>
+        and
+        <a href="https://weather-app-by-alice.netlify.app/" target="_blank">
+          hosted on Netlify
+        </a>
+      </footer>
+    </div>
   </body>
 </html>
